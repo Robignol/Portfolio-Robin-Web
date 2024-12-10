@@ -177,7 +177,7 @@ h2 {line-height: 98%;
     .button-about::after,  .button-contact::after{
       bottom: 0px;
       width: 100%;
-      height: 1%;  
+      height: 1px;  
       background-color: aliceblue;  
     }
     
@@ -213,6 +213,12 @@ h2 {line-height: 98%;
   padding: 10px;
   max-width: 1200px;
   margin: 0 auto;
+  
+}
+
+.gallery a {
+  outline: 0 none !important;
+  border: none;
 }
 
 .project-gallery {
@@ -513,6 +519,21 @@ greenyellow 89%,
  
 }
 
+.backtoprojects-button {
+  font-family: Baskervville;
+  font-size: 3rem;
+  text-align: center;  /* Centrage du texte à l'intérieur de l'élément */
+  text-decoration: none;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 55px;
+  color: aliceblue;  /* Applique la couleur bleue au texte */
+  width: fit-content;
+  display: block;  /* Garder 'block' pour le centrage avec 'auto' sur les marges */
+  clip-path: inset(0 0 0px 0);  /* Par défaut, on ne masque rien */
+
+}
 
 footer {padding-top:40px; padding-left:10px; padding-right:10px; text-align: center; color:rgba(240, 248, 255, 0.486);
 }
