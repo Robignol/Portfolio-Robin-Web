@@ -140,13 +140,13 @@ h2 {line-height: 98%;
     box-sizing: border-box;margin-top: -35px;
 
 }
-.video-center {text-align: center;margin-top: -15px; margin-left: auto; margin-right: auto;
+.video-center {text-align: center;margin-top: 0px; margin-left: auto; margin-right: auto;
 
 }
 .video-center video {
     width: 85%; /* La vidéo reste à 100% de la largeur du conteneur .video-center */
     height: auto; /* Maintient l'aspect de la vidéo */
-    max-width: 1100px;
+    max-width: 930px;
     min-width: 750px;
     
   }
@@ -189,15 +189,17 @@ h2 {line-height: 98%;
       
         height: auto; /* La hauteur de la vidéo s'ajuste automatiquement */
         overflow: hidden; /* Masque les débordements à l'intérieur de .video-center */
-         position: relative;  /* Sortir la vidéo du flux normal */ 
+         position: relative  /* Sortir la vidéo du flux normal */ 
       
       }
     
       .video-center video { 
-        max-width: 200%;
-        min-width: 200%;
+        max-width: 150%;
+        min-width: 150%;
    object-fit:cover;
-   margin-left: -23vh;
+   margin-left: -25%;
+
+   /* margin-left: -23vh; */
 
   } 
 } 
@@ -548,6 +550,7 @@ footer p {
   margin-left: auto;
   margin-right: auto;
   width: 15%;
+  max-width: 180px;
   padding-top: 60px; padding-bottom: 50px;
 }
 

@@ -29,8 +29,15 @@
         <div class="hero-container">
             <div class="First"><h1><a href="index.html">robin moncho</h1><h2>digital designer<br>& artist</h2></a></div>
             <div class="Third">
-                <div class="video-center"><video id='video' loop width=100% height="auto" autoplay muted> max-width: 1478 1000
-                <source src="Media/loop.webm" type="video/webm">
+                <div class="video-center"><video id='video' loop width=100% height="auto" playsinline autoplay muted> max-width: 1478 1000
+                <!-- <source src="Media/loop.webm" type="video/webm"> -->
+
+                <source 
+                src="Media/loop-4444-2-hevc-safari.mp4" 
+                type='video/mp4; codecs="hvc1"'>
+            <source 
+                src="Media/loop-4444-2-vp9-chrome.webm" 
+                type="video/webm">
               Your browser does not support the video tag.
               </video> </div></div> 
               <script>
@@ -65,7 +72,7 @@ vid.playbackRate = 1.2;
             </a>
 
             <a href="project-Octobre-Numerique.html" class="project" id="ONFM" hidefocus="hidefocus">
-              <img src="Media/ONFM/ONFM-thumbnail.webp" alt="Projet 1">
+              <img src="Media/ONFM/affiche-rue.webp" alt="Projet 1">
               <div class="titres">
                 <h3>Octobre Numérique</h3>
                 <p>Graphisme Print / Digital</p>
@@ -101,6 +108,14 @@ vid.playbackRate = 1.2;
               <div class="titres">
                 <h3>Challenger</h3>
                 <p>Expérience Web / Podcast augmenté</p>
+              </div>
+            </a>
+
+            <a href="project-menu-void.html" class="project">
+              <img src="Media/MenuVoid/place-holder.webp" alt="Projet 3">
+              <div class="titres">
+                <h3>Menu Void</h3>
+                <p>Prototype WebGL</p>
               </div>
             </a>
 
