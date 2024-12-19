@@ -153,7 +153,16 @@ h2 {line-height: 98%;
 
 /* .big-fonts { margin-top: 0px; margin-bottom: 55px; */
 
-
+#low-power-gif  {
+  width: 50%; /* La vidéo reste à 100% de la largeur du conteneur .video-center */
+  height: auto; /* Maintient l'aspect de la vidéo */
+  max-width: 930px;
+  min-width: 500px;
+  object-fit:cover;
+   margin-left: -16%;
+ 
+  
+}
 
 @media only screen and (max-width: 700px) {
     
