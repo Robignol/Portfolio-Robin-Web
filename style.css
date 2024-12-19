@@ -26,7 +26,7 @@ span  {color: greenyellow;
 p {font-family: Baskervville; font-size: 20px;
 }
 
-::selection { color: rgb(0, 0, 0);
+::selection { color: rgb(23, 26, 24);
   background:greenyellow;
 }
 
@@ -194,14 +194,18 @@ h2 {line-height: 98%;
       }
     
       .video-center video { 
-        max-width: 150%;
-        min-width: 150%;
+        max-width: 135%;
+        min-width: 135%;
    object-fit:cover;
-   margin-left: -25%;
+   margin-left: -18%;
 
    /* margin-left: -23vh; */
 
   } 
+
+  
+
+
 } 
   
  
@@ -348,6 +352,11 @@ h2 {line-height: 98%;
   .hey p {
    font-size: 40px;
   }
+
+  #gallery.explore-button {
+    margin-top: 20px;
+   }
+
 }
 
 

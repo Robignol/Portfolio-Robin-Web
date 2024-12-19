@@ -29,7 +29,7 @@
         <div class="hero-container">
             <div class="First"><h1><a href="index.html">robin moncho</h1><h2>digital designer<br>& artist</h2></a></div>
             <div class="Third">
-                <div class="video-center"><video id='video' loop width=100% height="auto" playsinline autoplay muted> max-width: 1478 1000
+                <div class="video-center"><video id='video' width=100% height="auto" playsinline autoplay muted loop> max-width: 1478 1000
                 <!-- <source src="Media/loop.webm" type="video/webm"> -->
 
                 <source 
@@ -39,7 +39,12 @@
                 src="Media/loop-4444-2-vp9-chrome.webm" 
                 type="video/webm">
               Your browser does not support the video tag.
-              </video> </div></div> 
+              </video> 
+            
+              <img id="low-power-gif" src="Media/low-energy-gif.gif" alt="LowPowerGif" style="display: none;">
+            
+            </div></div> 
+
               <script>
               var vid = document.getElementById('video');
 vid.load();
@@ -164,5 +169,6 @@ vid.playbackRate = 1.2;
       <p>fonts : karrik by jean-baptiste morizot and lucas le bihan<br>baskervville by l'arnt</p>
       
     </footer>
-    
+  
+    <script src="script.js"></script> 
 </body>
