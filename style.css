@@ -926,6 +926,30 @@ ul {
 padding-left:10px;padding-right:10px }
 
 
+.gif-loader-container {
+  width: 100%;               /* Le conteneur prend 100% de la largeur de son parent */
+  height: auto;              /* La hauteur sera ajustée automatiquement pour garder le ratio */
+  max-width: 1382px;         /* Largeur maximale du conteneur */
+  max-height: 857px;
+  min-height: 400px;
+  background-color: rgb(0, 0, 0); /* Fond noir */
+  display: flex;             /* Utilisation de flexbox pour centrer l'image */
+  justify-content: center;   /* Centrage horizontal */
+  align-items: center;       /* Centrage vertical */
+  overflow: contain;          /* Si l'image dépasse, elle sera coupée */
+  margin: 0 auto;            /* Centrage du conteneur */
+}
+
+.gif-loader {
+  width: 100%;   
+  min-width: 200px;
+  height: auto;              /* Hauteur ajustée automatiquement pour garder le ratio */
+  object-fit: contain;       /* L'image garde son ratio sans être déformée */
+  display: block;            /* Empêche le gif d'avoir des espaces sous l'image */
+  justify-content: center;   /* Centrage horizontal */
+  align-items: center; 
+}
+
 
 @media screen and (max-width: 700px) {
   .text-solo-pages, .title-solo-pages {max-width: fit-content;
