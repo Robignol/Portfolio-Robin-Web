@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robin Moncho - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="Fonts/Karrik-Regular.ttf" type="text/css" rel="stylesheet">
-    <link href="Fonts/Karrik-Italic.ttf" type="text/css" rel="stylesheet">
-    <link href="Fonts/Baskervville-Regular.woff2" type="text/css" rel="stylesheet">
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -59,11 +57,36 @@ vid.playbackRate = 1.2;
             
         </div>
         <a href="#gallery"><div class="explore-button" id="gallery">
-          <div class="big-fonts"> <img src="Media/arrow.png" alt="Projet 1" width="5%"> explore <img id="flip" src="Media/arrow.png" alt="Projet 1"width="5%"></div></a></div>
+          <div class="big-fonts"> <img src="Media/arrow2.png" alt="Projet 1" width="5%"> explore <img id="flip" src="Media/arrow2.png" alt="Projet 1"width="5%"></div></a></div>
    
 <style>#flip {-webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }</style>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const myVideo = document.getElementById("video");
+    const lowPowerGif = document.getElementById("low-power-gif");
+  
+    if (!myVideo) {
+      console.error("L'élément vidéo avec l'ID 'myVideo' n'a pas été trouvé.");
+      return;
+    }
+  
+    // Essayer de lire la vidéo
+    myVideo.play()
+      .then(() => {
+        // console.log("La vidéo est jouée normalement.");
+        lowPowerGif.style.display = "none";  // Cache le GIF
+      })
+      .catch((error) => {
+        console.error("Erreur de lecture de la vidéo:", error);
+        lowPowerGif.style.display = "block";  // Affiche le GIF
+        myVideo.style.display = "none";  // Cache la vidéo
+      });
+  });
+      </script> 
 
 
 
@@ -114,6 +137,14 @@ vid.playbackRate = 1.2;
               <div class="titres">
                 <h3>Challenger</h3>
                 <p>Expérience Web / Podcast augmenté</p>
+              </div>
+            </a>
+
+            <a href="project-bourse-casablanca.html" class="project">
+              <img src="Media/BourseCasa/bourse-casa-thumbnail.webp" alt="Projet 3">
+              <div class="titres">
+                <h3>Bourse de Casablanca</h3>
+                <p>Motion Design</p>
               </div>
             </a>
 
@@ -171,5 +202,5 @@ vid.playbackRate = 1.2;
       
     </footer>
   
-    <script src="script.js"></script> 
+ 
 </body>

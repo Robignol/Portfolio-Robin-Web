@@ -18,27 +18,3 @@ window.onscroll = function() {
 
   prevScrollpos = currentScrollPos;
 }
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const myVideo = document.getElementById("video");
-  const lowPowerGif = document.getElementById("low-power-gif");
-
-  if (!myVideo) {
-    console.error("L'élément vidéo avec l'ID 'myVideo' n'a pas été trouvé.");
-    return;
-  }
-
-  // Essayer de lire la vidéo
-  myVideo.play()
-    .then(() => {
-      console.log("La vidéo est jouée normalement.");
-      lowPowerGif.style.display = "none";  // Cache le GIF
-    })
-    .catch((error) => {
-      console.error("Erreur de lecture de la vidéo:", error);
-      lowPowerGif.style.display = "block";  // Affiche le GIF
-      myVideo.style.display = "none";  // Cache la vidéo
-    });
-});

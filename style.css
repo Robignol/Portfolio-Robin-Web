@@ -15,7 +15,9 @@ body {background-color: rgb(23, 26, 24); color:aliceblue; margin:0px;
  
 }
 
-
+img,video {
+  pointer-events: none;
+}
 
 
 span  {color: greenyellow;
