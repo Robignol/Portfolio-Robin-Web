@@ -43,7 +43,7 @@ p a {color:aliceblue(241, 57, 149); text-decoration: underline; margin:0;
 
 .fade-in {
   opacity: 0;
-  animation: slideInLeft 0.3s ease-out forwards;
+  animation: slideInLeft 0.2s ease-out forwards;
   animation-delay: 0.075s;
 }
 
@@ -64,9 +64,6 @@ p a {color:aliceblue(241, 57, 149); text-decoration: underline; margin:0;
     /* flex-direction: column; */
     flex-flow: row wrap;
     justify-content: space-between;
-
-    position: relative;
-  overflow: hidden;
 }
 
 h1 a {
@@ -161,24 +158,14 @@ h2 {line-height: 98%;
     box-sizing: border-box;margin-top: -35px;
 
 }
-.video-center {
- text-align: center;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
+.video-center {text-align: center;margin-top: 0px; margin-left: auto; margin-right: auto;
 
-  /* hauteur minimale fluide pour éviter le saut */
-  min-height: 40vw;   /* proportionnelle à la largeur de l’écran */
-  max-height: 900px;
 }
 .video-center video {
-   width: 85%;
-  height: auto;
-  max-width: 930px;
-  min-width: 750px;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain; /* ne coupe plus l’image */
+    width: 85%; /* La vidéo reste à 100% de la largeur du conteneur .video-center */
+    height: auto; /* Maintient l'aspect de la vidéo */
+    max-width: 930px;
+    min-width: 750px;
     
   }
 
@@ -226,11 +213,10 @@ h2 {line-height: 98%;
     .video-center {
         width: 100%; 
         margin-left:auto; margin-right:auto; /* Centrer la vidéo horizontalement */ 
-         min-height: 100vw;
+      
+        height: auto; /* La hauteur de la vidéo s'ajuste automatiquement */
         overflow: hidden; /* Masque les débordements à l'intérieur de .video-center */
          position: relative  /* Sortir la vidéo du flux normal */ 
-         
-
       
       }
     
